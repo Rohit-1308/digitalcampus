@@ -50,7 +50,7 @@ class Login : AppCompatActivity() {
 
             viewModel.pushLoginData(data)
 
-            Toast.makeText(this,"clicked on logn button ",Toast.LENGTH_LONG).show()
+            Toast.makeText(this,"clicked on login button ",Toast.LENGTH_LONG).show()
         }
 
         forgotPassword.setOnClickListener{
@@ -67,16 +67,7 @@ class Login : AppCompatActivity() {
                     apply()
                 }
 
-                //adding component of toast for success message
 
-//                MaterialAlertDialogBuilder(this)
-//                    .setTitle("Success")
-//                    .setMessage("Login Successful")
-//                    .setPositiveButton("ok") { dialog, which ->
-//                        // Respond to positive button press
-//                        dialog.dismiss()
-//                    }
-//                    .show()
 
                 if (response.body()?.user!!.isadmin == true) {
 

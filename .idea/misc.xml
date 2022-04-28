@@ -5,7 +5,11 @@
       <map>
         <entry key="..\:/ANDROID/pblrk/digitalcampus/app/src/main/res/drawable/btn_primary.xml" value="0.1735" />
         <entry key="..\:/ANDROID/pblrk/digitalcampus/app/src/main/res/drawable/custom_input.xml" value="0.1295" />
+        <entry key="..\:/ANDROID/pblrk/digitalcampus/app/src/main/res/drawable/header_style.xml" value="0.1135" />
+        <entry key="..\:/ANDROID/pblrk/digitalcampus/app/src/main/res/layout/activity_change_password.xml" value="0.2" />
+        <entry key="..\:/ANDROID/pblrk/digitalcampus/app/src/main/res/layout/activity_change_password_success.xml" value="0.25" />
         <entry key="..\:/ANDROID/pblrk/digitalcampus/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/ANDROID/pblrk/digitalcampus/app/src/main/res/layout/activity_profile.xml" value="0.2" />
         <entry key="..\:/ANDROID/pblrk/digitalcampus/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/omkar/AndroidStudioProjects/RealtimeChat/app/src/main/res/drawable/button_background.xml" value="0.128" />
         <entry key="..\:/Users/omkar/AndroidStudioProjects/RealtimeChat/app/src/main/res/drawable/ic_baseline_batch_prediction_24.xml" value="0.125" />

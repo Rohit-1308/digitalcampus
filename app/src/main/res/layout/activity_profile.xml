@@ -64,6 +64,7 @@
             android:textStyle="bold"
             android:textSize="18dp"
             android:textColor="@color/black"
+
             android:layout_marginLeft="30dp"/>
 
 
@@ -129,7 +130,8 @@
             android:textStyle="bold"
             android:textSize="18dp"
             android:textColor="@color/black"
-            android:layout_marginLeft="30dp"/>
+            android:layout_marginLeft="30dp"
+            />
 
     </LinearLayout>
     <LinearLayout
@@ -276,7 +278,7 @@
             android:text="Edit Profile"
             android:padding="10dp"
             android:textColor="@color/white"
-            android:background="@drawable/button_background" />
+            android:background="@drawable/btn_primary" />
 
         <Button
             android:id="@+id/user_change_password"
@@ -286,7 +288,7 @@
             android:padding="10dp"
             android:layout_marginTop="20dp"
             android:textColor="@color/white"
-            android:background="@drawable/button_background"
+            android:background="@drawable/btn_primary"
             />
 
 
