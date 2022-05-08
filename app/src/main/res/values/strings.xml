@@ -92,4 +92,14 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string-array name="dept_list">
+        <item>IT</item>
+        <item>COMPUTER ENGINEERING</item>
+        <item>CIVIL ENGINEERING</item>
+        <item>ELECTRICAL ENGINEERING</item>
+        <item>MECHANICAL ENGINEERING</item>
+        <item>ENTC ENGINEERING</item>
+
+    </string-array>
+    <string name="email">Email</string>
 </resources>

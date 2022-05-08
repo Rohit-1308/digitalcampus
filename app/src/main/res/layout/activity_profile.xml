@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_500"
+        android:background="@drawable/header_style"
         android:orientation="horizontal"
         android:padding="5dp">
 
@@ -23,6 +24,7 @@
         <TextView
             android:layout_weight="1"
             android:layout_width="0dp"
+            android:background="@drawable/header_style"
             android:layout_height="wrap_content"
             android:text="Profile"
             android:textSize="18dp"
@@ -33,8 +35,11 @@
 
     </LinearLayout>
 
-
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/profile_list_layout">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +64,6 @@
             android:id="@+id/edit_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="---"
             android:text=""
             android:textStyle="bold"
             android:textSize="18dp"
@@ -93,7 +97,6 @@
             android:id="@+id/edit_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="---"
             android:text=""
             android:textStyle="bold"
             android:textSize="18dp"
@@ -125,7 +128,6 @@
             android:id="@+id/edit_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="---"
             android:text=""
             android:textStyle="bold"
             android:textSize="18dp"
@@ -154,16 +156,24 @@
             android:textStyle="bold"
             android:textSize="18dp"
             android:layout_marginLeft="5dp"/>
-        <EditText
-            android:id="@+id/edit_branch"
-            android:layout_width="wrap_content"
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/edit_branch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=""-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="18dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginLeft="30dp"/>-->
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="---"
-            android:text=""
-            android:textStyle="bold"
-            android:textSize="18dp"
-            android:textColor="@color/black"
-            android:layout_marginLeft="30dp"/>
+            android:layout_below="@+id/spinner"
+            android:layout_margin="10dp"
+            android:entries="@array/dept_list" />
 
     </LinearLayout>
     <LinearLayout
@@ -190,7 +200,6 @@
             android:id="@+id/edit_rollNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="---"
             android:text=""
             android:textStyle="bold"
             android:textSize="18dp"
@@ -223,7 +232,6 @@
             android:id="@+id/edit_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="---"
             android:text=""
             android:textStyle="bold"
             android:textSize="18dp"
@@ -255,7 +263,6 @@
             android:id="@+id/edit_presenti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="0%"
             android:text=""
             android:textStyle="bold"
             android:textSize="18dp"
@@ -263,6 +270,7 @@
             android:layout_marginLeft="30dp"/>
 
     </LinearLayout>
+</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

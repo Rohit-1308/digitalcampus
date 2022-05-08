@@ -5,10 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.view.View.INVISIBLE
+import android.view.View.VISIBLE
+import android.widget.*
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.ViewModelProvider
@@ -17,6 +16,7 @@ import com.jaradomkar.realtimechat.model.totalAttendanceData
 import com.jaradomkar.realtimechat.model.userInfoData
 import com.jaradomkar.realtimechat.repository.Repository
 import okhttp3.MediaType.Companion.toMediaType
+import org.json.JSONObject.NULL
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -31,6 +31,7 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var editYear:EditText
     private lateinit var editPresenti:EditText
     private lateinit var editRollNumber:EditText
+    private lateinit var listlayout:LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -57,17 +58,26 @@ class ProfileActivity : AppCompatActivity() {
         editYear=findViewById(R.id.edit_year)
         editPresenti=findViewById(R.id.edit_presenti)
         editRollNumber=findViewById(R.id.edit_rollNumber)
+        listlayout=findViewById(R.id.profile_list_layout)
+
 
         editProfile.setOnClickListener{
             val intent = Intent(this,RegistrationActivity::class.java)
             startActivity(intent)
         }
-
-
+        if(editName.text==NULL){
+            editProfile.text="Add Profile"
+            listlayout.visibility=INVISIBLE
+        }
+        else{
+            editProfile.text="Edit Profile"
+            listlayout.visibility=VISIBLE
+        }
         viewModel.userDataResponse.observe(this) { response ->
             if (response.isSuccessful) {
 
                 if(response.body() !==null) {
+                    listlayout.visibility=VISIBLE
                     editName.setText(response.body()?.UserInfo!!.name.toString())
                     editEmail.setText(response.body()?.UserInfo!!.email.toString())
                     editPhone.setText(response.body()?.UserInfo!!.phone.toString())
