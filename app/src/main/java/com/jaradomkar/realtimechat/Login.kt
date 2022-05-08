@@ -69,6 +69,7 @@ class Login : AppCompatActivity() {
 
 
 
+
                 if (response.body()?.user!!.isadmin == true) {
 
                     val intent = Intent(this@Login, ManagementActivity::class.java)

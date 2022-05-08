@@ -46,7 +46,20 @@
         android:text=""
         android:textColorHint="@color/black" />
 
-
+    <!--    <Button-->
+<!--        android:id="@+id/forgot_password"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_below="@+id/login_password"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:text="Forgotten Password ?"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textFontWeight="1"-->
+<!--        android:textSize="15sp" />-->
 
 
     <TextView
@@ -123,5 +136,17 @@
         android:textColor="@color/red"
         android:textSize="17sp"
         android:textStyle="bold" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/signup_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="65dp"-->
+<!--        android:background="@drawable/btn_primary"-->
+<!--        android:padding="15sp"-->
+<!--        android:text="Sign Up"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textFontWeight="1"-->
+<!--        android:textSize="22sp" />-->
 
 </RelativeLayout>
